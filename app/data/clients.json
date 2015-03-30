@@ -1,0 +1,35 @@
+[
+  {
+    "fantasyName": "empresa teste 1",
+    "corporateName": "teste 1 LTDA",
+    "cnpj": "111111111-1",
+    "network": "Confiança",
+    "city": "Testelandia",
+    "state": "PR",
+    "street": "Ruuuua 1",
+    "zipcode": "17500-111",
+    "isEnabled": true
+  },
+  {
+    "fantasyName": "empresa teste 2",
+    "corporateName": "teste 2 LTDA",
+    "cnpj": "111111111-2",
+    "network": "Tauste",
+    "city": "Testelópolis",
+    "state": "PA",
+    "street": "Ruuuua 2",
+    "zipcode": "17500-222",
+    "isEnabled": true
+  },
+  {
+    "fantasyName": "empresa teste 3",
+    "corporateName": "teste 3 LTDA",
+    "cnpj": "111111111-3",
+    "network": "Pão de açúcar",
+    "city": "Ilha do Teste",
+    "state": "AM",
+    "street": "Ruuuua 3",
+    "zipcode": "17500-333",
+    "isEnabled": true
+  }
+]

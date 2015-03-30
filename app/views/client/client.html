@@ -53,6 +53,16 @@
               ng-model="zipcode" />
           </div>
         </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Rede:</label>
+          <div class="col-md-8">
+            <!-- <select class="form-control"> -->
+            <select class="form-control" ng-model="network" ng-options="network.name for network in networks">
+              <!-- <option value="" disabled selected>Selecione um rede</option> -->
+              <!-- <option ng-repeat="network in networks" value="{{network.name}}">{{network.name}}</option> -->
+            </select>
+          </div>
+        </div>
         <div class="form-group">                
           <div style="padding-left:110px">
             <input type="submit" value="Submit" class="btn btn-primary"/>
@@ -77,6 +87,7 @@
             <th><a href="" ng-click="orderByField='fantasyName'; reverseSort = !reverseSort">Nome Fantasia</a></th>
             <th><a href="" ng-click="orderByField='corporateName'; reverseSort = !reverseSort">Razão Social</a></th>
             <th><a href="" ng-click="orderByField='cnpj'; reverseSort = !reverseSort">CNPJ</a></th>
+            <th><a href="" ng-click="orderByField='network'; reverseSort = !reverseSort">Rede</a></th>
             <th><a href="" ng-click="orderByField='street'; reverseSort = !reverseSort">Rua</a></th>
             <th><a href="" ng-click="orderByField='city'; reverseSort = !reverseSort">Cidade</a></th>
             <th><a href="" ng-click="orderByField='state'; reverseSort = !reverseSort">Estado</a></th>
@@ -88,6 +99,7 @@
             <td>{{client.fantasyName}}</td>
             <td>{{client.corporateName}}</td>
             <td>{{client.cnpj}}</td>
+            <td>{{client.network}}</td>
             <td>{{client.street}}</td>
             <td>{{client.city}}</td>
             <td>{{client.state}}</td>

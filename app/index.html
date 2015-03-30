@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>Proto-market</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
@@ -26,14 +26,6 @@
         <a href="{{tab.link}}">{{tab.title}}</a>
       </li>
     </ul>
-      <!-- <tabset >
-        <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
-          <tab-heading>
-            <a href="#/{{tab.link}}">
-          </tab-heading>
-          {{tab.content}}
-        </tab>
-      </tabset> -->
   </div>
 
   <!--[if lt IE 7]>
@@ -54,10 +46,11 @@
   <script src="bower_components/angular-keepr/dist/keepr.js"></script>
   <script src="bower_components/angular-utils-pagination/dirPagination.js"></script>
   <script src="app.js"></script>
-  <script src="partials/home/home.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="partials/viewClient/viewClient.js"></script>
+  <script src="views/home/home.js"></script>
+  <script src="views/view1/view1.js"></script>
+  <script src="views/view2/view2.js"></script>
+  <script src="views/client/client.js"></script>
+  <script src="views/network/network.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

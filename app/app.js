@@ -18,27 +18,6 @@ angular.module('myApp', [
   $routeProvider.otherwise({redirectTo: '/home'});
 }])
 
-// .factory('Data', function ($http) {
-//   // var data = {
-//   //   clients = {},
-//   //   networworks = {}
-//   // }
-
-//   return {
-//     getClients: function () {
-//       $http.get('data/clients.json').success(function (data) {
-//         return data;
-//       })
-//     },
-//     getNetworks: function () {
-//       $http.get('data/networks.json').success(function (data) {
-//         return data;
-//       })
-//     }
-//   }
-// });
-
-
 // todo
 // mover controller para view index
 angular.module('ui.bootstrap').controller('TabsCtrl', function ($scope, $window) {

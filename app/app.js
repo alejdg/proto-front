@@ -24,10 +24,13 @@ angular.module('myApp', [
 angular.module('ui.bootstrap').controller('TabsCtrl', function ($scope, $window) {
   $scope.tabs = [
     { title:'Cargos', link:'#/roles', active: false },
-    { title:'Usuários', content:'Dynamic content 2', link:'#/view2', active: false, disabled: true },
+    { title:'Usuários', link:'#/users', active: false, disabled: false },
+    { title:'Grupos de Usuários', link:'#/user/groups', active: false },
+    { title:'Produtos', link:'#/products', active: false },
     { title:'Clientes', link:'#/clients', active: false},
-    { title:'Redes', content:'Dynamic content 2', link:'#/networks', active: false},
-    { title:'Grupos', content:'Dynamic content 2', link:'#/', active: false}
+    { title:'Produtos por Cliente', link:'#/client/products', active: false },
+    { title:'Redes', link:'#/networks', active: false},
+    { title:'Relatórios', link:'#/reports', active: false },
   ];
 
 });

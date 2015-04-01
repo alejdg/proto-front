@@ -17,9 +17,20 @@
 
 </head>
 <body>
-  <div id="header">
-    <h2><a href="#/home">Proto-market</a></h2>
-  </div>  
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/home">Proto-Market</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="btn btn-navbar">Config</a></li>
+        <li><a href="#" class="btn btn-navbar">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
   <div ng-controller="TabsCtrl">
     <ul class="nav nav-tabs">
       <li ng-repeat="tab in tabs" heading="{{tab.title}}" >

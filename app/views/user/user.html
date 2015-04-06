@@ -1,0 +1,98 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <!--Sidebar content-->
+      <h3>Inserir novo usuário</h3>
+      <form class="form-horizontal" role="form" ng-submit="addRow()">
+        <div class="form-group">
+          <label class="col-md-4 control-label">Nome Completo:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" name="name" ng-required="true"
+              ng-model="name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Nome de usuário:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" name="username" ng-required="true"
+              ng-model="username" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Telefone:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" name="phoneNumber" kp-mask="{{phoneNumber}}" kp-clean-field="true" kp-placeholder=""  ng-required="true" model-view-value="true"
+              ng-model="phoneNumber" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Icc Id:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" name="iccId" kp-mask="{{iccId}}" kp-clean-field="true" kp-placeholder="" ng-required="true" model-view-value"true"
+              ng-model="iccId" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Imei:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" name="imei" kp-mask="{{imei}}" kp-clean-field="true" kp-placeholder="" ng-required="true" model-view-value"true"
+              ng-model="imei" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label">Cargo:</label>
+          <div class="col-md-8">
+            <select class="form-control" ng-model="role" ng-options="role.name for role in roles"></select>
+          </div>
+        </div>
+        <div class="form-group">                
+          <div style="padding-left:110px">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <div class="col-md-8">
+      <!--Body content-->
+      <div class="col-md-6">
+      <label>Filtro:</label>
+      <input type="text" class="form-control"  ng-model="searchKeyword">
+      </div>
+      <div class="col-md-6">
+      <label>Items por página:</label>
+      <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th><a href="" ng-click="orderByField='fantasyName'; reverseSort = !reverseSort">Nome Fantasia</a></th>
+            <th><a href="" ng-click="orderByField='corporateName'; reverseSort = !reverseSort">Razão Social</a></th>
+            <th><a href="" ng-click="orderByField='cnpj'; reverseSort = !reverseSort">CNPJ</a></th>
+            <th><a href="" ng-click="orderByField='network'; reverseSort = !reverseSort">Rede</a></th>
+            <th><a href="" ng-click="orderByField='street'; reverseSort = !reverseSort">Rua</a></th>
+            <th><a href="" ng-click="orderByField='city'; reverseSort = !reverseSort">Cidade</a></th>
+            <th><a href="" ng-click="orderByField='state'; reverseSort = !reverseSort">Estado</a></th>
+            <th><a href="" ng-click="orderByField='zipcode'; reverseSort = !reverseSort">CEP</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr dir-paginate="user in users | filter: searchKeyword | orderBy:orderByField:reverseSort | itemsPerPage: pageSize">
+            <td>{{user.fantasyName}}</td>
+            <td>{{user.corporateName}}</td>
+            <td>{{user.cnpj}}</td>
+            <td>{{user.network}}</td>
+            <td>{{user.street}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.state}}</td>
+            <td>{{user.zipcode}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="text-center">
+        <dir-pagination-controls template-url="bower_components/angular-utils-pagination/dirPagination.tpl.html"></dir-pagination-controls>
+      </div>  
+
+    </div>
+  </div>
+</div>

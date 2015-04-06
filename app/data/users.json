@@ -1,0 +1,42 @@
+[
+  {
+    "username": "aldo01",
+    "userId": "15",
+    "name": "José Aldo",
+    "phoneNumber": "21999888999",
+    "iccId": "1111",
+    "imei": "10958105127",
+    "role": "Gerente",
+    "isEnabled": true
+  },
+  {
+    "username": "asilva",
+    "userId": "99",
+    "name": "Anderson Silva",
+    "phoneNumber": "22888999888",
+    "iccId": "1222",
+    "imei": "10958005137",
+    "role": "Promotor",
+    "isEnabled": true
+  },
+  {
+    "username": "rodw",
+    "userId": "80",
+    "name": "Rodrigo Werdum",
+    "phoneNumber": "25899288999",
+    "iccId": "1244",
+    "imei": "10753104147",
+    "role": "Promotor",
+    "isEnabled": true
+  },
+  {
+    "username": "vbelfort",
+    "userId": "13",
+    "name": "Victor Belfort",
+    "phoneNumber": "27991818991",
+    "iccId": "2222",
+    "imei": "10058005123",
+    "role": "Diretor",
+    "isEnabled": true
+  }
+]

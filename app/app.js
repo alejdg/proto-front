@@ -26,11 +26,11 @@ angular.module('ui.bootstrap').controller('TabsCtrl', function ($scope, $window)
     { title:'Cargos', link:'#/roles', active: false },
     { title:'Usuários', link:'#/users', active: false, disabled: false },
     { title:'Grupos de Usuários', link:'#/user/groups', active: false },
-    { title:'Produtos', link:'#/products', active: false },
-    { title:'Clientes', link:'#/clients', active: false},
-    { title:'Produtos por Cliente', link:'#/client/products', active: false },
+    { title:'Produtos', link:'#/products', active: false, disabled: true },
     { title:'Redes', link:'#/networks', active: false},
-    { title:'Relatórios', link:'#/reports', active: false },
+    { title:'Clientes', link:'#/clients', active: false},
+    { title:'Produtos por Cliente', link:'#/client/products', active: false, disabled: true },
+    { title:'Relatórios', link:'#/reports', active: false, disabled: true },
   ];
 
 });
